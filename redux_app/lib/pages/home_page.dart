@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:redux_app/containers/counter/counter.dart';
 import 'package:redux_app/containers/counter/increase_counter.dart';
+import 'package:redux_app/containers/auth_button/auth_button_container.dart';
 
 class HomePage extends StatelessWidget {
   // We passed it a title from the app root, so we have to
@@ -21,6 +22,9 @@ class HomePage extends StatelessWidget {
           child: new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+
+              new GoogleAuthButtonContainer(),
+
               new Text(
                   "You have pushed the button many times",
               ),
